@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #202124;
+}
+
+.top {
+    height: 48px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gmail {
+    display: flex;
+    align-items: center;
+    flex-direction: flex-end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #70757a;
+}
+
+.gmail:hover {
+    text-decoration: underline;
+}
+
+.txtimagens {
+    display: flex;
+    align-items: center;
+    flex-direction: flex-end;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #70757a;
+}
+
+.gmail a, .txtimagens a {
+    color: #70757a;
+}
+
+.txtimagens:hover {
+    text-decoration: underline;
+}
+
+.google_apps {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    margin-right: 12px;
+}
+
+.google_apps:hover {
+    background-color: #d6dada;
+}
+
+
+.bolinhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bolinha {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #474849;
+}
+
+.botao_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 36px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+.cor_botao {
+    width: 120px;
+    height: 36px;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cor_botao:hover {
+    background-color: #0f60c9;
+    box-shadow: 2px 2px 3px rgb(206, 202, 202);
+}
+
+.logo_google {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 260px;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin-top: 26px;
+}
+
+.barra_de_pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 542px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+
+.barra_de_pesquisa:hover {
+    box-shadow: 2px 2px 3px rgb(206, 202, 202);
+}
+
+.lupa {
+    padding-left: 18px;
+}
+
+.pesquisa input {
+    height: 42px;
+    width: 400px;
+    border: none;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.icones_direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.icones_direita img {
+    margin-right: 6px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.botoes_inferiores {
+    width: 140px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    font-size: 14px;
+    color: #202124;
+    margin: 11px 4px;
+}
+
+.botoes_inferiores:hover {
+    border: 1px solid rgb(156, 156, 157);
+    box-shadow: 2px 2px 3px rgb(206, 202, 202);
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #f8f9fa;
+}
+
+.copyright {
+    display: flex;
+    height: 40px;
+    font-size: 15px;
+    color: #70757a;
+    padding: 5px 30px;
+    border-bottom: 1px solid #cccbcb;
+}
+
+.copyright a:hover {
+    color: #0f60c9;
+}
+
+.container_footer {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textos_esquerda {
+    display: flex;
+    column-gap: 15px;
+    font-size: 15px;
+    padding: 0px 30px;
+}
+
+.textos_esquerda a {
+    color: #70757a;
+}
+
+.textos_esquerda a:hover {
+    text-decoration: underline;
+}
+
+.textos_direita {
+    display: flex;
+    column-gap: 15px;
+    font-size: 15px;
+    padding: 0px 30px;
+}
+
+.textos_direita a {
+    color: #70757a;
+}
+
+.textos_direita a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+
+    .copyright {
+        justify-content: center;
+    }
+
+    .container_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .barra_de_pesquisa {
+        width: 70%;
+    }
+
+    .pesquisa input {
+        width: 70%;
+    }
+
+    .copyright {
+        justify-content: center;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .textos_direita, .textos_esquerda {
+        font-size: 12px;
+        text-align: center;
+    }
+}
